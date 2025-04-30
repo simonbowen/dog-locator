@@ -5,4 +5,4 @@ WORKDIR /var/www/html
 COPY composer.* .
 RUN composer install --no-dev
 
-COPY . /var/www/html
+COPY . .

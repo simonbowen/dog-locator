@@ -17,8 +17,8 @@ use Gotify\Endpoint\Message;
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
 $dotenv->load();
 
-$server = new Server($_ENV['GOTIFY_SERVER']);
-$auth = new Token($_ENV['GOTIFY_APP_KEY']);
+$server = new Server(getenv('GOTIFY_SERVER'));
+$auth = new Token(getenv('GOTIFY_APP_KEY'));
 
 $app = AppFactory::create();
 $twig = Twig::create(__DIR__ . '/../templates', ['cache' => false]);
