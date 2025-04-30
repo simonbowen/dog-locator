@@ -11,7 +11,8 @@
         "slim/psr7": "^1.7",
         "slim/twig-view": "^3.4",
         "verifiedjoseph/gotify-api-php": "^1.10",
-        "vlucas/phpdotenv": "^5.6"
+        "vlucas/phpdotenv": "^5.6",
+        "php-di/php-di": "^7.0"
     },
     "scripts": {
         "dev": [

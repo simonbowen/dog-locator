@@ -18,9 +18,14 @@ closeButton.addEventListener('click', (e) => {
 
 submitButton.addEventListener('click', async (e) => {
     const form = new FormData();
+    const originalText = submitButton.innerText;
+
     form.append('latitude', coords.latitude);
     form.append('longitude', coords.longitude);
     form.append('message', document.getElementById('message').value);
+
+    submitButton.setAttribute('disabled', 'disabled');
+    submitButton.innerText = 'Sending...';
 
     await fetch('/', {
         method: 'POST',
@@ -29,6 +34,9 @@ submitButton.addEventListener('click', async (e) => {
 
     modal.classList.add('hidden');
     modalSuccess.classList.remove('hidden');
+
+    submitButton.innerText = originalText;
+    submitButton.removeAttribute('disabled');
 });
 
 closeSuccessButton.addEventListener('click', (e) => {
