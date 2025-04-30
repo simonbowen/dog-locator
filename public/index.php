@@ -14,7 +14,7 @@ use Gotify\Server;
 use Gotify\Auth\Token;
 use Gotify\Endpoint\Message;
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
 $dotenv->load();
 
 $server = new Server($_ENV['GOTIFY_SERVER']);
