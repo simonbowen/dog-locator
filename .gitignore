@@ -1,0 +1,6 @@
+vendor
+node_modules
+cache
+public/css
+*.log
+*.env

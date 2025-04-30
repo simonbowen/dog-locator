@@ -1,0 +1,27 @@
+<div id="modal-form" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+    <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
+
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div
+                class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                <div>
+                    <div class="text-center">
+                        <h3 class="text-base font-semibold text-gray-900" id="modal-title">Send message and location to Owners</h3>            
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="map" class="mt-2 w-full h-[300px]"></div>
+                </div>
+
+                <div>
+                    <textarea id="message" class="p-2 mt-2 w-full h-[100px] border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Enter your message here..."></textarea>
+                    <button id="submit" type="button" class="mt-2 inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Send</button>
+                    <button id="cancel" type="button" class="mt-2 inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
